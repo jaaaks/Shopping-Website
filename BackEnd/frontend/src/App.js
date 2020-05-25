@@ -1,32 +1,22 @@
 import React, { Component } from 'react';
+import NavBar from './components/navbar';
 import Login from './components/Login';
 import SignUp from './components/signup';
-import NavBar from './components/navbar';
+import Landing from './components/Landing';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends Component {
-  state = { 
-    showNavBar: true,
-    showLogin: false,
-    showSignUp:false
-   };
-  forLogin= () => {
-    this.setState({showNavBar: false});
-    this.setState({showLogin: true});
-    this.setState({showSignUp: false});
-  };
-  forSignUp= () =>{
-    this.setState({showNavBar: false});
-    this.setState({showSignUp: true});
-    this.setState({showLogin: false});
-  }
+
   render() { 
-    const {showNavBar, showLogin, showSignUp} = this.state;
     return (
-      <React.Fragment >
-        {showNavBar && <NavBar onLogin={this.forLogin} onSignUp={this.forSignUp}/>}
-        {showLogin && <Login onSignUp={this.forSignUp}/>}
-        {showSignUp && <SignUp onLogin={this.forLogin}/>}
-      </React.Fragment>
+      <Router>
+      <div >
+        <NavBar />
+        <Route exact path="/" component={Landing} />
+        <Route exact path="/register" component={SignUp} />
+        <Route exact path="/login" component={Login} />
+      </div>
+      </Router>
     );
   }
 }

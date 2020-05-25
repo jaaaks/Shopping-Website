@@ -25,7 +25,7 @@ class Login extends Component {
                 </label>
                 <input type="submit" className="button1" value="Submit" />
               </form>
-              <a href="#" className="link-login" onClick={this.props.onSignUp}>Not a member? Register Here</a>
+              <a href="#" className="link-login">Not a member? Register Here</a>
               </div>
             </div>
           </div>

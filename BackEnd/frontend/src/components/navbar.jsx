@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../styles/nav.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart,faHome,faSignInAlt,faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import {Link} from 'react-router-dom';
 
 class NavBar extends Component {
     state = {  }
@@ -76,9 +77,9 @@ class NavBar extends Component {
                 <a className="dropdown-item" href="#">
                   Customer Service
                 </a>
-                <a className="dropdown-item" onClick={this.props.onLogin} href="#">
+                <Link to="/login"className="dropdown-item" >
                   Sign In
-                </a>
+                </Link>
               </div>
               <a href="#" className="navbar-brand px-5">
                 <img src="../styles/logo.gif" alt="COMPANY LOGO"></img>
@@ -100,34 +101,34 @@ class NavBar extends Component {
               <div className="collapse navbar-collapse" id="navbarToggler">
                 <ul className="navbar-nav mt-2 mt-lg-0">
                   <li className="nav-item pl-0 pr-0 active">
-                    <a href="#" className="nav-link">
+                    <Link to="/" className="nav-link">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item ">
-                    <a href="#" className="nav-link pl-0 pr-3">
+                    <Link to="/" className="nav-link pl-0 pr-3">
                       <FontAwesomeIcon icon={faHome} />
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item ">
-                    <a href="#" className="nav-link pl-3 pr-1" onClick={this.props.onLogin}>
+                    <Link to="/login" className="nav-link pl-3 pr-1" >
                       Login
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item ">
-                    <a href="#" className="nav-link pl-0 pr-3" onClick={this.props.onLogin}>
+                    <Link to="/login" className="nav-link pl-0 pr-3" >
                       <FontAwesomeIcon icon={faSignInAlt} />
-                    </a>
+                    </Link>
                   </li>
-                  <li className="nav-item " onClick={this.props.onSignUp}>
-                    <a href="#" className="nav-link pl-3">
+                  <li className="nav-item " >
+                    <Link to="/register" className="nav-link pl-3">
                       Register
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item ">
-                    <a href="#" className="nav-link pl-0 pr-3" onClick={this.props.onSignUp}>
+                    <Link to="/register" className="nav-link pl-0 pr-3" >
                       <FontAwesomeIcon icon={faUserPlus} />
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item pl-3">
                     <a href="#" className="nav-link">

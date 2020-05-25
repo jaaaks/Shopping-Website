@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../styles/register.css";
 import axios from 'axios';
 import RegIcon from "../styles/registration-icon.png";
+import { Link } from "react-router-dom";
 class SignUp extends Component {
   state = {
     name: "",
@@ -86,10 +87,10 @@ class SignUp extends Component {
               />
               <input type="submit" className="button" value="Submit" />
             </form>
-            <a href="#" className="link-login" onClick={this.props.onLogin}>
+            <Link to="/login" className="link-login" >
               {" "}
               Already a member? Login Here
-            </a>
+            </Link>
           </div>
         </div>
       </div>
