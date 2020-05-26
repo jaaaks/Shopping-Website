@@ -3,22 +3,18 @@ import NavBar from './components/navbar';
 import Login from './components/Login';
 import SignUp from './components/signup';
 import Landing from './components/Landing';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import {useLocation, BrowserRouter as Router, Route } from "react-router-dom";
 
-class App extends Component {
-
-  render() { 
+const App = props => {
+  const location = useLocation();
     return (
-      <Router>
       <div >
-        <NavBar />
+        {location.pathname!=="/login" && location.pathname!=="/register" && < NavBar />}
         <Route exact path="/" component={Landing} />
         <Route exact path="/register" component={SignUp} />
         <Route exact path="/login" component={Login} />
       </div>
-      </Router>
     );
   }
-}
  
 export default App;
