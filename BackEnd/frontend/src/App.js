@@ -5,7 +5,7 @@ import SignUp from './components/signup';
 import Landing from './components/Landing';
 import {useLocation, BrowserRouter as Router, Route } from "react-router-dom";
 
-const App = props => {
+const App = () => {
   const location = useLocation();
     return (
       <div >
