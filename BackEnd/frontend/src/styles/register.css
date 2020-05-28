@@ -76,13 +76,13 @@ input[type=password]:focus {
     animation-name: change;
     animation-duration: 2s;
 }
-input[type=text].name{
+input[type=text]#name{
     text-align: left;
     background-image: url('./nameicon.png');
     background-position: 20px; 
     background-repeat: no-repeat;
 }
-input[type=text].number{
+input[type=text]#number{
     background-image: url('./phone-icon.png');
     background-position: 20px; 
     background-repeat: no-repeat;
@@ -213,13 +213,13 @@ input[type=text].number{
         animation-name: change;
         animation-duration: 2s;
     }
-    input[type=text].name{
+    input[type=text]#name{
         text-align: left;
         background-image: url('./nameicon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
     }
-    input[type=text].number{
+    input[type=text]#number{
         background-image: url('./phone-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
@@ -351,13 +351,13 @@ input[type=text].number{
         animation-name: change;
         animation-duration: 2s;
     }
-    input[type=text].name{
+    input[type=text]#name{
         text-align: left;
         background-image: url('./nameicon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
     }
-    input[type=text].number{
+    input[type=text]#number{
         background-image: url('./phone-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
@@ -488,13 +488,13 @@ input[type=text].number{
         animation-name: change;
         animation-duration: 2s;
     }
-    input[type=text].name{
+    input[type=text]#name{
         text-align: left;
         background-image: url('./nameicon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
     }
-    input[type=text].number{
+    input[type=text]#number{
         background-image: url('./phone-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
@@ -627,13 +627,13 @@ input[type=text].number{
         animation-name: change;
         animation-duration: 2s;
     }
-    input[type=text].name{
+    input[type=text]#name{
         text-align: left;
         background-image: url('./nameicon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
     }
-    input[type=text].number{
+    input[type=text]#number{
         background-image: url('./phone-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
@@ -766,13 +766,13 @@ input[type=text].number{
         animation-name: change;
         animation-duration: 2s;
     }
-    input[type=text].name{
+    input[type=text]#name{
         text-align: left;
         background-image: url('./nameicon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
     }
-    input[type=text].number{
+    input[type=text]#number{
         background-image: url('./phone-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;

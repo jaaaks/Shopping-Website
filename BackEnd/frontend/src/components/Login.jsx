@@ -1,12 +1,30 @@
 import React, { Component } from "react";
 import "../styles/login.css";
 import Logo from "../styles/icons8-openid-500.png";
-import axios from 'axios';
+import axios from "axios";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { loginUser } from "../actions/authActions";
+import classnames from "classnames";
 class Login extends Component {
   state = {
     email: "",
     password: "",
+    errors: {}
+  };
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.auth.isAuthenticated) {
+      this.props.history.push("/dashboard"); // push user to dashboard when they login
+    }
+    if (nextProps.errors) {
+      this.setState({
+        errors: nextProps.errors,
+      });
+    }
+  }
+  onChange = (e) => {
+    this.setState({ [e.target.id]: e.target.value });
   };
   handleSubmit = (e) => {
     e.preventDefault();
@@ -17,14 +35,10 @@ class Login extends Component {
       email,
       password,
     };
-    axios
-      .post("http://localhost:5000/api/users/login", User)
-      .then(() => console.log("Logged in"))
-      .catch((err) => {
-        console.error(err);
-      });
+    this.props.loginUser(User);
   };
   render() {
+    const { errors } = this.state;
     return (
       <div>
         <div className="my-component"></div>
@@ -35,18 +49,38 @@ class Login extends Component {
           <div className="heading">
             <h2> Login</h2>
             <form onSubmit={this.handleSubmit}>
-              <input
-                type="email"
-                onChange={(e) => this.setState({ email: e.target.value })}
-                placeholder="Email"
-                className="name"
-              />
-              <input
-                type="password"
-                onChange={(e) => this.setState({ password: e.target.value })}
-                placeholder="Password"
-              />
-
+              <div>
+                <input
+                  type="email"
+                  onChange={this.onChange}
+                  error={errors.email}
+                  placeholder="Email"
+                  id="email"
+                  className={classnames("", {
+                    invalid: errors.email || errors.emailnotfound,
+                  })}
+                />
+                <span className="red-text">
+                  {errors.email}
+                  {errors.emailnotfound}
+                </span>
+              </div>
+              <div>
+                <input
+                  type="password"
+                  onChange={this.onChange}
+                  error={errors.password}
+                  placeholder="Password"
+                  id="password"
+                  className={classnames("", {
+                    invalid: errors.password || errors.passwordincorrect,
+                  })}
+                />
+                <span className="red-text">
+                  {errors.password}
+                  {errors.passwordincorrect}
+                </span>
+              </div>
               <label className="container">
                 {" "}
                 Remember Me
@@ -65,4 +99,13 @@ class Login extends Component {
   }
 }
 
-export default Login;
+Login.propTypes = {
+  loginUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+  errors: PropTypes.object.isRequired,
+};
+const mapStateToProps = (state) => ({
+  auth: state.auth,
+  errors: state.errors,
+});
+export default connect(mapStateToProps, { loginUser })(Login);
