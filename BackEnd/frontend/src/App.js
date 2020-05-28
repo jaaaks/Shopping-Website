@@ -9,11 +9,8 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
-import jwt_decode from "jwt-decode";
-import setAuthToken from "./utils/setAuthToken";
-import { setCurrentUser, logoutUser } from "./actions/authActions";
 import PrivateRoute from "./components/PrivateRoute";
-import Dashboard from "./components/Dashboard";
+import MyAccount from "./components/MyAccount";
 
 
 const App = () => {
@@ -27,7 +24,7 @@ const App = () => {
       <Route exact path="/register" component={SignUp} />
       <Route exact path="/login" component={Login} />
       <Switch>
-        <PrivateRoute exact path="/dashboard" component={Dashboard} />
+        <PrivateRoute exact path="/my account" component={MyAccount} />
       </Switch>
     </div>
   );

@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import "bootstrap/dist/css/bootstrap.css";
 import 'bootstrap/dist/js/bootstrap.js';
 import 'bootstrap';
-import {useLocation, BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import {Provider} from 'react-redux';
 import store from './store';
 import jwt_decode from "jwt-decode";

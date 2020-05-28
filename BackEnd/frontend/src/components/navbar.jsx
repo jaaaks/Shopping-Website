@@ -3,10 +3,17 @@ import '../styles/nav.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart,faHome,faSignInAlt,faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import {Link} from 'react-router-dom';
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { logoutUser } from "../actions/authActions";
 
 class NavBar extends Component {
-    state = {  }
+  onLogoutClick = (e) => {
+    e.preventDefault();
+    this.props.logoutUser();
+  };
     render() { 
+      const { isAuthenticated, user } = this.props.auth;
         return (
           <div className="container-fluid">
             <nav className="navbar navbar-dark navbar-expand-lg">
@@ -71,15 +78,21 @@ class NavBar extends Component {
                 </a>
                 <div className="dropdown-divider"></div>
                 <h3 className="head">Help & Settings</h3>
-                <a className="dropdown-item" href="#">
+                <Link to="/my account" className="dropdown-item" >
                   Your Account
-                </a>
+                </Link>
                 <a className="dropdown-item" href="#">
                   Customer Service
                 </a>
-                <Link to="/login"className="dropdown-item" >
+                {!isAuthenticated && <Link to="/login"className="dropdown-item" >
                   Sign In
                 </Link>
+                }
+                {
+                  isAuthenticated && <Link to="/" onClick={this.onLogoutClick} className="dropdown-item">
+                    Not {user.name.split(" ")[0]}? Log Out
+                  </Link>
+                }
               </div>
               <a href="#" className="navbar-brand px-5">
                 <img src="../styles/logo.gif" alt="COMPANY LOGO"></img>
@@ -142,5 +155,14 @@ class NavBar extends Component {
           );
     }
 }
+
+NavBar.propTypes = {
+  logoutUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+};
+
+const mapStateToProps = (state) => ({
+  auth: state.auth,
+});
  
-export default NavBar;
+export default connect(mapStateToProps,{ logoutUser })(NavBar);

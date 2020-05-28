@@ -16,6 +16,13 @@ class SignUp extends Component {
     errors: {},
   };
 
+  componentDidMount() {
+    // If logged in and user navigates to Register page, should redirect them to dashboard
+    if (this.props.auth.isAuthenticated) {
+      this.props.history.push("/my account");
+    }
+  }
+
   componentWillReceiveProps(nextProps) {
     if (nextProps.errors) {
       this.setState({
@@ -47,7 +54,7 @@ class SignUp extends Component {
         <div className="my-component"></div>
         <div className="reg-form">
           <div className="icon">
-            <img src={RegIcon}></img>
+            <img src={RegIcon} alt=""></img>
           </div>
           <div className="title">
             <h2>Create Account</h2>
@@ -63,7 +70,7 @@ class SignUp extends Component {
                     invalid: errors.name,
                   })}
                 />
-                <span className="red-text">{errors.name}</span>
+                <span className="error-name">{errors.name}</span>
               </div>
               <div>
                 <input
@@ -76,7 +83,7 @@ class SignUp extends Component {
                     invalid: errors.email,
                   })}
                 />
-                <span className="red-text">{errors.email}</span>
+                <span className="error-email">{errors.email}</span>
               </div>
               <div>
                 <input
@@ -89,7 +96,7 @@ class SignUp extends Component {
                     invalid: errors.number,
                   })}
                 />
-                <span className="red-text">{errors.number}</span>
+                <span className="error-number">{errors.number}</span>
               </div>
               <div>
                 <input
@@ -102,7 +109,7 @@ class SignUp extends Component {
                   })}
                   placeholder="Password"
                 />
-                <span className="red-text">{errors.password}</span>
+                <span className="error-password">{errors.password}</span>
               </div>
               <input type="submit" className="button" value="Submit" />
             </form>

@@ -14,6 +14,30 @@ div.reg-form{
 .title{
     padding-top: 20%;
 }
+.error-name{
+    position: absolute;
+    top: 280px;
+    left: 140px;
+    color: red;
+}
+.error-email{
+    position: absolute;
+    top: 373px;
+    left: 140px;
+    color: red;
+}
+.error-number{
+    position: absolute;
+    top: 466px;
+    left: 140px;
+    color: red;
+}
+.error-password{
+    position: absolute;
+    top: 559px;
+    left: 140px;
+    color: red;
+}
 input[type=text]{
     border: none;
     border-bottom: 3px solid white;
@@ -150,6 +174,30 @@ input[type=text]#number{
     }
     .title{
         padding-top: 20%;
+    }
+    .error-name{
+        position: absolute;
+        top: 250px;
+        left: 120px;
+        color: red;
+    }
+    .error-email{
+        position: absolute;
+        top: 345px;
+        left: 120px;
+        color: red;
+    }
+    .error-number{
+        position: absolute;
+        top: 440px;
+        left: 120px;
+        color: red;
+    }
+    .error-password{
+        position: absolute;
+        top: 535px;
+        left: 120px;
+        color: red;
     }
     input[type=text]{
         border: none;
@@ -826,3 +874,7 @@ input[type=text]#number{
         to{border-bottom: 3px solid black;}
     }    
 }
+
+
+
+

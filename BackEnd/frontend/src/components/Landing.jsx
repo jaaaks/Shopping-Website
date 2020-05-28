@@ -3,11 +3,7 @@ class Landing extends Component {
 
     render() { 
         return ( 
-            <div>
-            <br />Asdzfxghjasdgfhgh adsfdftfy WAEFSRGETY
-            <br /> asdfghjklk;
-            <br /> adsfgfyugihoj
-            </div>   
+            <h1> Welcome to Home Page </h1>
          );
     }
 }

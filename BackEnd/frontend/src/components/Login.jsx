@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../styles/login.css";
 import Logo from "../styles/icons8-openid-500.png";
-import axios from "axios";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
@@ -13,9 +12,15 @@ class Login extends Component {
     password: "",
     errors: {}
   };
+  componentDidMount() {
+    // If logged in and user navigates to Login page, should redirect them to dashboard
+    if (this.props.auth.isAuthenticated) {
+      this.props.history.push("/my account");
+    }
+  }
   componentWillReceiveProps(nextProps) {
     if (nextProps.auth.isAuthenticated) {
-      this.props.history.push("/dashboard"); // push user to dashboard when they login
+      this.props.history.push("/my account"); // push user to dashboard when they login
     }
     if (nextProps.errors) {
       this.setState({
@@ -44,7 +49,7 @@ class Login extends Component {
         <div className="my-component"></div>
         <div className="login-form">
           <div className="icon">
-            <img src={Logo} width="75" height="75"></img>
+            <img src={Logo} alt="" width="75" height="75"></img>
           </div>
           <div className="heading">
             <h2> Login</h2>
