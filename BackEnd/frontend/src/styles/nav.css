@@ -1,13 +1,11 @@
-.container-fluid{
-    background-color: rgb(59, 73, 134);
-background-image: url(./drop-texture.png);
+#nav{
+    background-color: #12343b;
 }
 .dropdown-menu{
     width: 40% !important;
     max-height: 1075%;
     overflow-y: auto;
-    background-color: #888C46 !important;
-   background-image: url(./fabric-plaid.png);
+    background-color: #a09075 !important;
 }
 .head{
     padding-left: 3%;

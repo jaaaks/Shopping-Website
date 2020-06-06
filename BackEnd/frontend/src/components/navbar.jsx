@@ -15,7 +15,7 @@ class NavBar extends Component {
     render() { 
       const { isAuthenticated, user } = this.props.auth;
         return (
-          <div className="container-fluid">
+          <div className="container-fluid" id="nav">
             <nav className="navbar navbar-dark navbar-expand-lg">
               <a
                 href="#"
@@ -105,7 +105,7 @@ class NavBar extends Component {
                   className="form-control-lg w-50 mr-sm-2"
                 />
                 <button
-                  className="btn btn-lg btn-success my-2 my-sm-0"
+                  className="btn btn-lg btn-info my-2 my-sm-0"
                   type="submit"
                 >
                   Search
