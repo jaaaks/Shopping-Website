@@ -30,7 +30,7 @@ import Oppo from "../styles/landing_page/MultiCarousel/Oppo.png";
 import Asus from "../styles/landing_page/MultiCarousel/Asus.png";
 import HTC from "../styles/landing_page/MultiCarousel/HTC.png";
 import OnePlus from "../styles/landing_page/MultiCarousel/OnePlus.png";
-import Laptop from "../styles/landing_page/AppleLaptops.png";
+import Laptop from "../styles/landing_page/Laptop.png";
 import Badminton from "../styles/landing_page/Badminton.png";
 import Cricket from "../styles/landing_page/Cricket.png";
 import Football from "../styles/landing_page/Football.png";
@@ -43,6 +43,13 @@ import Speakers from "../styles/landing_page/Speakers.png";
 import Tablets from "../styles/landing_page/Tablets.png";
 import GamingMonitors from "../styles/landing_page/GamingMonitors.png";
 import MusicalInstruments from "../styles/landing_page/MusicalInstruments.png";
+import Luggage from "../styles/landing_page/Luggage.png";
+import Cars from "../styles/landing_page/Cars.png";
+import SportsBikes from "../styles/landing_page/SportsBikes.png";
+import EconomicBikes from "../styles/landing_page/EconomicBikes.png";
+import GearCycles from "../styles/landing_page/GearCycles.png";
+import WomenCycle from "../styles/landing_page/WomenCycle.png";
+import TopBooks from "../styles/landing_page/TopBooks.png";
 import "../styles/css/landing.css";
 class Landing extends Component {
   render() {
@@ -446,17 +453,17 @@ class Landing extends Component {
               <div className="col-12 col-lg-3 col-md-4 col-sm-6 my-3">
                 <div className="card rounded-0">
                   <div className="card-body">
-                    <h5 className="card-title">Luxury In Your Hands</h5>
+                    <h5 className="card-title">Dining And Cookware</h5>
                     <div className="row">
                       <div className="col-6 mt-2 mb-2">
                         <Link to="/login">
                           <img
                             className="card-img-top"
-                            src={Televisions}
+                            src={KitchenStorage}
                             alt="PS4"
                           />
                           <p className="card-text" id="card-font">
-                            Televisions
+                            Kitchen Storage
                           </p>
                         </Link>
                       </div>
@@ -464,11 +471,11 @@ class Landing extends Component {
                         <Link to="/login">
                           <img
                             className="card-img-top"
-                            src={Appliances}
+                            src={GasStoves}
                             alt="PS4"
                           />
                           <p className="card-text" id="card-font">
-                            Appliances
+                            Gas Stoves
                           </p>
                         </Link>
                       </div>
@@ -476,11 +483,11 @@ class Landing extends Component {
                         <Link to="/login">
                           <img
                             className="card-img-top"
-                            src={Summer_Essentials}
+                            src={TableWare}
                             alt="PS4"
                           />
                           <p className="card-text" id="card-font">
-                            Summer Essentials
+                            Tableware
                           </p>
                         </Link>
                       </div>
@@ -488,11 +495,11 @@ class Landing extends Component {
                         <Link to="/login">
                           <img
                             className="card-img-top"
-                            src={Chairs}
+                            src={Cookware}
                             alt="PS4"
                           />
                           <p className="card-text" id="card-font">
-                            Chairs And Desks
+                            Cookware
                           </p>
                         </Link>
                       </div>
@@ -519,17 +526,17 @@ class Landing extends Component {
               <div className="col-12 col-lg-3 col-md-4 col-sm-6 my-3">
                 <div className="card rounded-0">
                   <div className="card-body">
-                    <h5 className="card-title">Luxury In Your Hands</h5>
+                    <h5 className="card-title">Entertainment At Work</h5>
                     <div className="row">
                       <div className="col-6 mt-2 mb-2">
                         <Link to="/login">
                           <img
                             className="card-img-top"
-                            src={Televisions}
+                            src={Speakers}
                             alt="PS4"
                           />
                           <p className="card-text" id="card-font">
-                            Televisions
+                            Speakers
                           </p>
                         </Link>
                       </div>
@@ -537,11 +544,11 @@ class Landing extends Component {
                         <Link to="/login">
                           <img
                             className="card-img-top"
-                            src={Appliances}
+                            src={Tablets}
                             alt="PS4"
                           />
                           <p className="card-text" id="card-font">
-                            Appliances
+                            Tablets
                           </p>
                         </Link>
                       </div>
@@ -549,11 +556,11 @@ class Landing extends Component {
                         <Link to="/login">
                           <img
                             className="card-img-top"
-                            src={Summer_Essentials}
+                            src={GamingMonitors}
                             alt="PS4"
                           />
                           <p className="card-text" id="card-font">
-                            Summer Essentials
+                            Gaming Monitors
                           </p>
                         </Link>
                       </div>
@@ -561,11 +568,11 @@ class Landing extends Component {
                         <Link to="/login">
                           <img
                             className="card-img-top"
-                            src={Chairs}
+                            src={MusicalInstruments}
                             alt="PS4"
                           />
                           <p className="card-text" id="card-font">
-                            Chairs And Desks
+                            Musical Instruments
                           </p>
                         </Link>
                       </div>
@@ -577,10 +584,107 @@ class Landing extends Component {
                   </div>
                 </div>
               </div>
+              <div className="col-12 col-lg-3 col-md-4 col-sm-6 my-3">
+                <div className="card rounded-0" id="style">
+                  <div className="card-body">
+                    <h5 className="card-title">Bags & Luggage</h5>
+                    <img className="card-img-top" src={Luggage} alt="PS4" />
+                    <Link to="/login" className="card-link">
+                      {" "}
+                      See More >>{" "}
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-lg-3 col-md-4 col-sm-6 my-3">
+                <div className="card rounded-0" id="style">
+                  <div className="card-body">
+                    <h5 className="card-title">Cars</h5>
+                    <img className="card-img-top" src={Cars} alt="PS4" />
+                    <Link to="/login" className="card-link">
+                      {" "}
+                      See More >>{" "}
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-lg-3 col-md-4 col-sm-6 my-3">
+                <div className="card rounded-0">
+                  <div className="card-body">
+                    <h5 className="card-title">Bikes & Cycles</h5>
+                    <div className="row">
+                      <div className="col-6 mt-2 mb-2">
+                        <Link to="/login">
+                          <img
+                            className="card-img-top"
+                            src={SportsBikes}
+                            alt="PS4"
+                          />
+                          <p className="card-text" id="card-font">
+                            Sports Bikes
+                          </p>
+                        </Link>
+                      </div>
+                      <div className="col-6 mt-2 mb-2">
+                        <Link to="/login">
+                          <img
+                            className="card-img-top"
+                            src={EconomicBikes}
+                            alt="PS4"
+                          />
+                          <p className="card-text" id="card-font">
+                            Economic Bikes
+                          </p>
+                        </Link>
+                      </div>
+                      <div className="col-6 mt-3 mb-2">
+                        <Link to="/login">
+                          <img
+                            className="card-img-top"
+                            src={GearCycles}
+                            alt="PS4"
+                          />
+                          <p className="card-text" id="card-font">
+                            Gear Cycles
+                          </p>
+                        </Link>
+                      </div>
+                      <div className="col-6 mt-3 mb-2">
+                        <Link to="/login">
+                          <img
+                            className="card-img-top"
+                            src={WomenCycle}
+                            alt="PS4"
+                          />
+                          <p className="card-text" id="card-font">
+                            Cycle For Women
+                          </p>
+                        </Link>
+                      </div>
+                    </div>
+                    <Link to="/login" className="card-link">
+                      {" "}
+                      See More >>{" "}
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-lg-3 col-md-4 col-sm-6 my-3">
+                <div className="card rounded-0" id="style">
+                  <div className="card-body">
+                    <h5 className="card-title">Top Book Choices For You</h5>
+                    <img className="card-img-top" src={TopBooks} alt="PS4" />
+                    <Link to="/login" className="card-link">
+                      {" "}
+                      See More >>{" "}
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="card text-center my-3">
+          <div className="card text-center mt-3">
             <div className="card-header text-left">Mobile Phones</div>
             <div className="card-body">
               <div className="container-fluid">
