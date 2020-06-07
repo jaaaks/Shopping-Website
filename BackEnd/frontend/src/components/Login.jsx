@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "../styles/login.css";
-import Logo from "../styles/icons8-openid-500.png";
+import "../styles/css/login.css";
+import Logo from "../styles/login_page/login-logo.png";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";

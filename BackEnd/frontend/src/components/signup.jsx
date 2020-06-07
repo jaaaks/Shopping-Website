@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "../styles/register.css";
-import RegIcon from "../styles/registration-icon.png";
+import "../styles/css/register.css";
+import RegIcon from "../styles/register_page/registration-icon.png";
 import { Link, withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";

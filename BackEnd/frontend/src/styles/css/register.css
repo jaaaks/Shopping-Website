@@ -61,7 +61,7 @@ input[type=email]{
     margin: 20px;
     box-sizing: border-box;
     padding-left: 100px;
-    background-image: url('./email-icon.png');
+    background-image: url('../register_page/email-icon.png');
     background-position: 20px; 
     background-repeat: no-repeat;
     font-size: 20px;
@@ -76,7 +76,7 @@ input[type=password]{
     margin: 20px;
     padding-left: 100px;
     box-sizing: border-box;
-    background-image: url('./lock-icon.png');
+    background-image: url('../register_page/lock-icon.png');
     background-position: 20px; 
     background-repeat: no-repeat;
     transition: transform 2s;
@@ -102,12 +102,12 @@ input[type=password]:focus {
 }
 input[type=text]#name{
     text-align: left;
-    background-image: url('./nameicon.png');
+    background-image: url('../register_page/nameicon.png');
     background-position: 20px; 
     background-repeat: no-repeat;
 }
 input[type=text]#number{
-    background-image: url('./phone-icon.png');
+    background-image: url('../register_page/phone-icon.png');
     background-position: 20px; 
     background-repeat: no-repeat;
 }
@@ -222,7 +222,7 @@ input[type=text]#number{
         margin: 20px;
         box-sizing: border-box;
         padding-left: 100px;
-        background-image: url('./email-icon.png');
+        background-image: url('../register_page/email-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
         font-size: 20px;
@@ -237,7 +237,7 @@ input[type=text]#number{
         margin: 20px;
         padding-left: 100px;
         box-sizing: border-box;
-        background-image: url('./lock-icon.png');
+        background-image: url('../register_page/lock-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
         transition: transform 2s;
@@ -263,12 +263,12 @@ input[type=text]#number{
     }
     input[type=text]#name{
         text-align: left;
-        background-image: url('./nameicon.png');
+        background-image: url('../register_page/nameicon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
     }
     input[type=text]#number{
-        background-image: url('./phone-icon.png');
+        background-image: url('../register_page/phone-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
     }
@@ -360,7 +360,7 @@ input[type=text]#number{
         margin: 18px;
         box-sizing: border-box;
         padding-left: 100px;
-        background-image: url('./email-icon.png');
+        background-image: url('../register_page/email-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
         font-size: 18px;
@@ -375,7 +375,7 @@ input[type=text]#number{
         margin: 18px;
         padding-left: 100px;
         box-sizing: border-box;
-        background-image: url('./lock-icon.png');
+        background-image: url('../register_page/lock-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
         transition: transform 2s;
@@ -401,12 +401,12 @@ input[type=text]#number{
     }
     input[type=text]#name{
         text-align: left;
-        background-image: url('./nameicon.png');
+        background-image: url('../register_page/nameicon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
     }
     input[type=text]#number{
-        background-image: url('./phone-icon.png');
+        background-image: url('../register_page/phone-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
     }
@@ -499,7 +499,7 @@ input[type=text]#number{
         margin: 18px;
         box-sizing: border-box;
         padding-left: 100px;
-        background-image: url('./email-icon.png');
+        background-image: url('../register_page/email-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
     }
@@ -513,7 +513,7 @@ input[type=text]#number{
         margin: 18px;
         padding-left: 100px;
         box-sizing: border-box;
-        background-image: url('./lock-icon.png');
+        background-image: url('../register_page/lock-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
         transition: transform 2s;
@@ -538,12 +538,12 @@ input[type=text]#number{
     }
     input[type=text]#name{
         text-align: left;
-        background-image: url('./nameicon.png');
+        background-image: url('../register_page/nameicon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
     }
     input[type=text]#number{
-        background-image: url('./phone-icon.png');
+        background-image: url('../register_page/phone-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
     }
@@ -636,7 +636,7 @@ input[type=text]#number{
         margin: 18px;
         box-sizing: border-box;
         padding-left: 100px;
-        background-image: url('./email-icon.png');
+        background-image: url('../register_page/email-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
         font-size: 15px;
@@ -651,7 +651,7 @@ input[type=text]#number{
         margin: 18px;
         padding-left: 100px;
         box-sizing: border-box;
-        background-image: url('./lock-icon.png');
+        background-image: url('../register_page/lock-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
         transition: transform 2s;
@@ -677,12 +677,12 @@ input[type=text]#number{
     }
     input[type=text]#name{
         text-align: left;
-        background-image: url('./nameicon.png');
+        background-image: url('../register_page/nameicon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
     }
     input[type=text]#number{
-        background-image: url('./phone-icon.png');
+        background-image: url('../register_page/phone-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
     }
@@ -775,7 +775,7 @@ input[type=text]#number{
         margin: 18px;
         box-sizing: border-box;
         padding-left: 100px;
-        background-image: url('./email-icon.png');
+        background-image: url('../register_page/email-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
         font-size: 15px;
@@ -790,7 +790,7 @@ input[type=text]#number{
         margin: 18px;
         padding-left: 100px;
         box-sizing: border-box;
-        background-image: url('./lock-icon.png');
+        background-image: url('../register_page/lock-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
         transition: transform 2s;
@@ -816,12 +816,12 @@ input[type=text]#number{
     }
     input[type=text]#name{
         text-align: left;
-        background-image: url('./nameicon.png');
+        background-image: url('../register_page/nameicon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
     }
     input[type=text]#number{
-        background-image: url('./phone-icon.png');
+        background-image: url('../register_page/phone-icon.png');
         background-position: 20px; 
         background-repeat: no-repeat;
     }

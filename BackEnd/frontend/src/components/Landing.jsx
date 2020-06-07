@@ -2,35 +2,48 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Slide1 from "../styles/landing_cards/Slide1.png";
-import Slide2 from "../styles/landing_cards/Slide2.png";
-import Slide3 from "../styles/landing_cards/Slide3.png";
-import PS4 from "../styles/landing_cards/PS4.png";
-import Gym from "../styles/landing_cards/Gym.png";
-import Work from "../styles/landing_cards/Work.png";
-import Safety from "../styles/landing_cards/Safety.png";
-import Perfume from "../styles/landing_cards/Perfume.png";
-import HairCare from "../styles/landing_cards/Hair_Care.png";
-import Makeup from "../styles/landing_cards/Makeup.png";
-import Luxury from "../styles/landing_cards/Luxury.png";
-import Men_Fashion from "../styles/landing_cards/Men Fashion.png";
-import Women_Fashion from "../styles/landing_cards/Women Fashion.png";
-import Innerwear from "../styles/landing_cards/Innerwear.png";
-import Electronics from "../styles/landing_cards/Electronics.png";
-import Televisions from "../styles/landing_cards/Televisons.png";
-import Summer_Essentials from "../styles/landing_cards/Summer_Essentials.png";
-import Appliances from "../styles/landing_cards/Appliances.png";
-import Chairs from "../styles/landing_cards/Chairs and Desks.png";
-import Apple from "../styles/landing_cards/Apple.png";
-import Samsung from "../styles/landing_cards/Samsung.png";
-import Mi from "../styles/landing_cards/Mi.png";
-import Nokia from "../styles/landing_cards/Nokia.png";
-import Vivo from "../styles/landing_cards/Vivo.png";
-import Oppo from "../styles/landing_cards/Oppo.png";
-import Asus from "../styles/landing_cards/Asus.png";
-import HTC from "../styles/landing_cards/HTC.png";
-import OnePlus from "../styles/landing_cards/OnePlus.png";
-import "../styles/landing.css";
+import Slide1 from "../styles/landing_page/Carousel/Slide1.png";
+import Slide2 from "../styles/landing_page/Carousel/Slide2.png";
+import Slide3 from "../styles/landing_page/Carousel/Slide3.png";
+import PS4 from "../styles/landing_page/PS4.png";
+import Gym from "../styles/landing_page/Gym.png";
+import Work from "../styles/landing_page/Work.png";
+import Safety from "../styles/landing_page/Safety.png";
+import Perfume from "../styles/landing_page/Perfume.png";
+import HairCare from "../styles/landing_page/Hair_Care.png";
+import Makeup from "../styles/landing_page/Makeup.png";
+import Luxury from "../styles/landing_page/Luxury.png";
+import Men_Fashion from "../styles/landing_page/Men Fashion.png";
+import Women_Fashion from "../styles/landing_page/Women Fashion.png";
+import Innerwear from "../styles/landing_page/Innerwear.png";
+import Electronics from "../styles/landing_page/Electronics.png";
+import Televisions from "../styles/landing_page/Televisons.png";
+import Summer_Essentials from "../styles/landing_page/Summer_Essentials.png";
+import Appliances from "../styles/landing_page/Appliances.png";
+import Chairs from "../styles/landing_page/Chairs and Desks.png";
+import Apple from "../styles/landing_page/MultiCarousel/Apple.png";
+import Samsung from "../styles/landing_page/MultiCarousel/Samsung.png";
+import Mi from "../styles/landing_page/MultiCarousel/Mi.png";
+import Nokia from "../styles/landing_page/MultiCarousel/Nokia.png";
+import Vivo from "../styles/landing_page/MultiCarousel/Vivo.png";
+import Oppo from "../styles/landing_page/MultiCarousel/Oppo.png";
+import Asus from "../styles/landing_page/MultiCarousel/Asus.png";
+import HTC from "../styles/landing_page/MultiCarousel/HTC.png";
+import OnePlus from "../styles/landing_page/MultiCarousel/OnePlus.png";
+import Laptop from "../styles/landing_page/AppleLaptops.png";
+import Badminton from "../styles/landing_page/Badminton.png";
+import Cricket from "../styles/landing_page/Cricket.png";
+import Football from "../styles/landing_page/Football.png";
+import Swimming from "../styles/landing_page/Swimming.png";
+import GasStoves from "../styles/landing_page/GasStoves.png";
+import KitchenStorage from "../styles/landing_page/KitchenStorage.jpg";
+import Cookware from "../styles/landing_page/Cookware.png";
+import TableWare from "../styles/landing_page/TableWare.png";
+import Speakers from "../styles/landing_page/Speakers.png";
+import Tablets from "../styles/landing_page/Tablets.png";
+import GamingMonitors from "../styles/landing_page/GamingMonitors.png";
+import MusicalInstruments from "../styles/landing_page/MusicalInstruments.png";
+import "../styles/css/landing.css";
 class Landing extends Component {
   render() {
     const responsive = {
@@ -369,8 +382,204 @@ class Landing extends Component {
                   </div>
                 </div>
               </div>
+              <div className="col-12 col-lg-3 col-md-4 col-sm-6 my-3">
+                <div className="card rounded-0">
+                  <div className="card-body">
+                    <h5 className="card-title">Live Your Sport</h5>
+                    <div className="row">
+                      <div className="col-6 mt-2 mb-2">
+                        <Link to="/login">
+                          <img
+                            className="card-img-top"
+                            src={Cricket}
+                            alt="PS4"
+                          />
+                          <p className="card-text" id="card-font">
+                            Cricket
+                          </p>
+                        </Link>
+                      </div>
+                      <div className="col-6 mt-2 mb-2">
+                        <Link to="/login">
+                          <img
+                            className="card-img-top"
+                            src={Football}
+                            alt="PS4"
+                          />
+                          <p className="card-text" id="card-font">
+                            Football
+                          </p>
+                        </Link>
+                      </div>
+                      <div className="col-6 mt-3 mb-2">
+                        <Link to="/login">
+                          <img
+                            className="card-img-top"
+                            src={Badminton}
+                            alt="PS4"
+                          />
+                          <p className="card-text" id="card-font">
+                            Badminton
+                          </p>
+                        </Link>
+                      </div>
+                      <div className="col-6 mt-3 mb-2">
+                        <Link to="/login">
+                          <img
+                            className="card-img-top"
+                            src={Swimming}
+                            alt="PS4"
+                          />
+                          <p className="card-text" id="card-font">
+                            Swimming
+                          </p>
+                        </Link>
+                      </div>
+                    </div>
+                    <Link to="/login" className="card-link">
+                      {" "}
+                      See More >>{" "}
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-lg-3 col-md-4 col-sm-6 my-3">
+                <div className="card rounded-0">
+                  <div className="card-body">
+                    <h5 className="card-title">Luxury In Your Hands</h5>
+                    <div className="row">
+                      <div className="col-6 mt-2 mb-2">
+                        <Link to="/login">
+                          <img
+                            className="card-img-top"
+                            src={Televisions}
+                            alt="PS4"
+                          />
+                          <p className="card-text" id="card-font">
+                            Televisions
+                          </p>
+                        </Link>
+                      </div>
+                      <div className="col-6 mt-2 mb-2">
+                        <Link to="/login">
+                          <img
+                            className="card-img-top"
+                            src={Appliances}
+                            alt="PS4"
+                          />
+                          <p className="card-text" id="card-font">
+                            Appliances
+                          </p>
+                        </Link>
+                      </div>
+                      <div className="col-6 mt-3 mb-2">
+                        <Link to="/login">
+                          <img
+                            className="card-img-top"
+                            src={Summer_Essentials}
+                            alt="PS4"
+                          />
+                          <p className="card-text" id="card-font">
+                            Summer Essentials
+                          </p>
+                        </Link>
+                      </div>
+                      <div className="col-6 mt-3 mb-2">
+                        <Link to="/login">
+                          <img
+                            className="card-img-top"
+                            src={Chairs}
+                            alt="PS4"
+                          />
+                          <p className="card-text" id="card-font">
+                            Chairs And Desks
+                          </p>
+                        </Link>
+                      </div>
+                    </div>
+                    <Link to="/login" className="card-link">
+                      {" "}
+                      See More >>{" "}
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-lg-3 col-md-4 col-sm-6 my-3">
+                <div className="card rounded-0" id="style">
+                  <div className="card-body">
+                    <h5 className="card-title">Laptops From Top Brands</h5>
+                    <img className="card-img-top" src={Laptop} alt="PS4" />
+                    <Link to="/login" className="card-link">
+                      {" "}
+                      See More >>{" "}
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-lg-3 col-md-4 col-sm-6 my-3">
+                <div className="card rounded-0">
+                  <div className="card-body">
+                    <h5 className="card-title">Luxury In Your Hands</h5>
+                    <div className="row">
+                      <div className="col-6 mt-2 mb-2">
+                        <Link to="/login">
+                          <img
+                            className="card-img-top"
+                            src={Televisions}
+                            alt="PS4"
+                          />
+                          <p className="card-text" id="card-font">
+                            Televisions
+                          </p>
+                        </Link>
+                      </div>
+                      <div className="col-6 mt-2 mb-2">
+                        <Link to="/login">
+                          <img
+                            className="card-img-top"
+                            src={Appliances}
+                            alt="PS4"
+                          />
+                          <p className="card-text" id="card-font">
+                            Appliances
+                          </p>
+                        </Link>
+                      </div>
+                      <div className="col-6 mt-3 mb-2">
+                        <Link to="/login">
+                          <img
+                            className="card-img-top"
+                            src={Summer_Essentials}
+                            alt="PS4"
+                          />
+                          <p className="card-text" id="card-font">
+                            Summer Essentials
+                          </p>
+                        </Link>
+                      </div>
+                      <div className="col-6 mt-3 mb-2">
+                        <Link to="/login">
+                          <img
+                            className="card-img-top"
+                            src={Chairs}
+                            alt="PS4"
+                          />
+                          <p className="card-text" id="card-font">
+                            Chairs And Desks
+                          </p>
+                        </Link>
+                      </div>
+                    </div>
+                    <Link to="/login" className="card-link">
+                      {" "}
+                      See More >>{" "}
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
           <div className="card text-center my-3">
             <div className="card-header text-left">Mobile Phones</div>
             <div className="card-body">

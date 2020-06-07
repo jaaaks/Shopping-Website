@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/nav.css';
+import '../styles/css/nav.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart,faHome,faSignInAlt,faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import {Link} from 'react-router-dom';
