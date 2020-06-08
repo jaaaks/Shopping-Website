@@ -9,7 +9,7 @@ Shopping website created for the purpose of commercial use. This website offers 
 ## General Info
 A website full of rich features like registration, authentication, searching, viewing the cart, buying and selling of products,
 secured online payments, delivery options and much more rich features. This website was created by the students of IIT Guwahati of CST branch.
-## Teechnologies
+## Technologies
 Projected is created with:
 * HTML
 * CSS
