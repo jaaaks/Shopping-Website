@@ -1,23 +1,28 @@
 const express = require("express");
 const router = express.Router();
+//Using bcrypt library to hash and dehash passwords for security, if someone hacks your database
 const bcrypt = require("bcryptjs");
+//Using json webtoken to sign tokens to authenticated user
 const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
 
-// Load input validation
+//Using validation method 
 const validateRegisterInput = require("../../validation/register");
 const validateLoginInput = require("../../validation/login");
 
 // Load User model
 const User = require("../../models/User");
 
+//Using the post method to register the user
 router.post("/register", (req, res) => {
   const { errors, isValid } = validateRegisterInput(req.body);
 
+  //Validating the input data
   if (!isValid) {
     return res.status(400).json(errors);
   }
 
+  //Matching the user
   User.findOne({ email: req.body.email }).then((user) => {
     if (user) {
       return res.status(400).json({ email: "Email already exists" });
@@ -43,9 +48,7 @@ router.post("/register", (req, res) => {
   });
 });
 
-// @route POST api/users/login
-// @desc Login user and return JWT token
-// @access Public
+//Logging in the user and signing jsonweb tokens to users
 router.post("/login", (req, res) => {
   // Form validation
   const { errors, isValid } = validateLoginInput(req.body);
@@ -57,13 +60,12 @@ router.post("/login", (req, res) => {
   const password = req.body.password; 
   // Find user by email
   User.findOne({ email }).then((user) => {
-    // Check if user exists
+    // Checking if user exists
     if (!user) {
       return res.status(404).json({ emailnotfound: "Email not found" });
-    } // Check password
+    } // Checking password
     bcrypt.compare(password, user.password).then((isMatch) => {
       if (isMatch) {
-        // User matched
         // Create JWT Payload
         const payload = {
           id: user.id,
@@ -73,7 +75,7 @@ router.post("/login", (req, res) => {
           payload,
           keys.secretOrKey,
           {
-            expiresIn: 31556926, // 1 year in seconds
+            expiresIn: 3600, // 1 hour in seconds
           },
           (err, token) => {
             res.json({

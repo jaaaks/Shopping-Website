@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+//npm library for making multi item carousel easily
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+//importing single item carousel images
 import Slide1 from "../styles/landing_page/Carousel/Slide1.png";
 import Slide2 from "../styles/landing_page/Carousel/Slide2.png";
 import Slide3 from "../styles/landing_page/Carousel/Slide3.png";
+//importing images for various categories
 import PS4 from "../styles/landing_page/PS4.png";
 import Gym from "../styles/landing_page/Gym.png";
 import Work from "../styles/landing_page/Work.png";
@@ -21,15 +24,6 @@ import Televisions from "../styles/landing_page/Televisons.png";
 import Summer_Essentials from "../styles/landing_page/Summer_Essentials.png";
 import Appliances from "../styles/landing_page/Appliances.png";
 import Chairs from "../styles/landing_page/Chairs and Desks.png";
-import Apple from "../styles/landing_page/MultiCarousel/Apple.png";
-import Samsung from "../styles/landing_page/MultiCarousel/Samsung.png";
-import Mi from "../styles/landing_page/MultiCarousel/Mi.png";
-import Nokia from "../styles/landing_page/MultiCarousel/Nokia.png";
-import Vivo from "../styles/landing_page/MultiCarousel/Vivo.png";
-import Oppo from "../styles/landing_page/MultiCarousel/Oppo.png";
-import Asus from "../styles/landing_page/MultiCarousel/Asus.png";
-import HTC from "../styles/landing_page/MultiCarousel/HTC.png";
-import OnePlus from "../styles/landing_page/MultiCarousel/OnePlus.png";
 import Laptop from "../styles/landing_page/Laptop.png";
 import Badminton from "../styles/landing_page/Badminton.png";
 import Cricket from "../styles/landing_page/Cricket.png";
@@ -50,12 +44,23 @@ import EconomicBikes from "../styles/landing_page/EconomicBikes.png";
 import GearCycles from "../styles/landing_page/GearCycles.png";
 import WomenCycle from "../styles/landing_page/WomenCycle.png";
 import TopBooks from "../styles/landing_page/TopBooks.png";
+//importing the multi item carousel images
+import Apple from "../styles/landing_page/MultiCarousel/Apple.png";
+import Samsung from "../styles/landing_page/MultiCarousel/Samsung.png";
+import Mi from "../styles/landing_page/MultiCarousel/Mi.png";
+import Nokia from "../styles/landing_page/MultiCarousel/Nokia.png";
+import Vivo from "../styles/landing_page/MultiCarousel/Vivo.png";
+import Oppo from "../styles/landing_page/MultiCarousel/Oppo.png";
+import Asus from "../styles/landing_page/MultiCarousel/Asus.png";
+import HTC from "../styles/landing_page/MultiCarousel/HTC.png";
+import OnePlus from "../styles/landing_page/MultiCarousel/OnePlus.png";
+//importing the landing page css
 import "../styles/css/landing.css";
 class Landing extends Component {
   render() {
     const responsive = {
       superLargeDesktop: {
-        // the naming can be any, depends on you.
+        //for determining no of items in each view
         breakpoint: { max: 4000, min: 3000 },
         items: 10,
       },
@@ -711,7 +716,7 @@ class Landing extends Component {
                   responsive={responsive}
                 >
                   <div>
-                    <img src={Apple} class="card-img-top" alt="..." />
+                    <img src={Apple} className="card-img-top" alt="..." />
                     <div class="card-body">
                       <p class="card-text">Apple Phones</p>
                       <Link to="/login" className="stretched-link">

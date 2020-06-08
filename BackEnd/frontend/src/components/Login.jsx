@@ -46,7 +46,6 @@ class Login extends Component {
     const { errors } = this.state;
     return (
       <div>
-        <div className="my-component"></div>
         <div className="login-form">
           <div className="icon">
             <img src={Logo} alt="" width="75" height="75"></img>

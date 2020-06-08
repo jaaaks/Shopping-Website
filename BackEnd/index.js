@@ -7,7 +7,7 @@ const passport = require("passport");
 const users = require("./routes/api/users");
 
 const app = express();
-
+//For cross origin resource sharing
 app.use(
   cors({
     origin: "http://localhost:3000",
@@ -19,6 +19,7 @@ app.use(bodyParser.json());
 
 const db = require("./config/keys").mongoURI;
 
+//Conecting with mongo database
 mongoose
   .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("MongoDB successfully connected"))

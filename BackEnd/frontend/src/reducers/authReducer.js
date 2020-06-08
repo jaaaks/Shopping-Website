@@ -5,6 +5,7 @@ const initialState = {
   user: {},
   loading: false,
 };
+//for sending the next state based on the action type
 export default function (state = initialState, action) {
   switch (action.type) {
     case SET_CURRENT_USER:

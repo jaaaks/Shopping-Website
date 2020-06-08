@@ -1,3 +1,4 @@
+//For providing schema of the database 
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const UserSchema = new Schema({
