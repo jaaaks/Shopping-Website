@@ -1,0 +1,30 @@
+footer{
+    background: #12343b;
+    background: -webkit-linear-gradient(90deg, #2d545e, #12343b);
+    background: linear-gradient(90deg, #2d545e, #12343b);
+    color: white;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+footer a{
+    color: grey;
+}
+footer a:hover{
+    color: #eba86a;
+    text-decoration: none;
+}
+.top{
+    padding: 1em;
+}
+.list-unstyle{
+    font-size: 14px;
+    padding-left: 0px;
+    list-style-type: none;
+}
+.bottom{
+    font-size: 12px;
+    padding: 10px;
+    color: grey;
+    border-top: 1px solid white;
+    text-align: center;
+}

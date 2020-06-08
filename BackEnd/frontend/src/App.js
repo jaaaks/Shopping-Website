@@ -4,6 +4,7 @@ import NavBar from "./components/navbar";
 import Login from "./components/Login";
 import SignUp from "./components/signup";
 import Landing from "./components/Landing";
+import Footer from "./components/Footer"
 import {
   useLocation,
   BrowserRouter as Router,
@@ -30,6 +31,7 @@ const App = () => {
       <Switch>
         <PrivateRoute exact path="/my account" component={MyAccount} />
       </Switch>
+      <Footer />
     </div>
   );
 };
