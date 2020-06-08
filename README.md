@@ -25,9 +25,13 @@ Projected is created with:
 * React
 * Mongo
 ## Setup
-To run this project, install it locally using npm..
+To run this project, install it locally using npm:
+
+```
 $ cd backend
 $ npm install
 $ npm run dev
+```
+
 ## Status
 This project is still under development
